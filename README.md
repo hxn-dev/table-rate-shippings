@@ -13,11 +13,18 @@ Install via Composer
 composer require lunarphp/table-rate-shipping
 ```
 
+Run the migrations
+
+```
+php artisan migrate
+```
+
 Then register the plugin in your service provider
 
 ```php
 use Lunar\Admin\Support\Facades\LunarPanel;
 use Lunar\Shipping\ShippingPlugin;
+use Filament\Panel;
 // ...
 
 public function register(): void
